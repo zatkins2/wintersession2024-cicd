@@ -1,0 +1,16 @@
+name: my_first_ci
+
+# tell workflow when it will run
+on: 
+  pull_request:
+  push:
+    - main
+    - develop
+  workflow-dispatch: # adds button to run workflow
+
+# now the actual tasks
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      -run: echo "hello world"
