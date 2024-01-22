@@ -4,8 +4,9 @@ name: my_first_ci
 on: 
   pull_request:
   push:
-    - main
-    - develop
+    branches:
+      - main
+      - develop
   workflow-dispatch: # adds button to run workflow
 
 # now the actual tasks
