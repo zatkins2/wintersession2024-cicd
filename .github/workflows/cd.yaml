@@ -6,7 +6,7 @@ on:
       - published
 
 # first build package, then submit
-job:
+jobs:
   build:
     runs-on: ubuntu-latest
     steps: 
