@@ -24,6 +24,7 @@ jobs:
       name: testpypi
       url: https://test.pypi.org/p/wintersession2024cicd
     permissions:
+      contents: read
       id-token: write
     steps: 
       - uses: actions/download-artifact@v3
